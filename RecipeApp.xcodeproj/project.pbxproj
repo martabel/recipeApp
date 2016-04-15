@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5BFA15FB1CBC368B0016C242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA15FA1CBC368B0016C242 /* AppDelegate.swift */; };
-		5BFA15FD1CBC368B0016C242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA15FC1CBC368B0016C242 /* ViewController.swift */; };
 		5BFA16001CBC368B0016C242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFA15FE1CBC368B0016C242 /* Main.storyboard */; };
 		5BFA16031CBC368B0016C242 /* RecipeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA16011CBC368B0016C242 /* RecipeApp.xcdatamodeld */; };
 		5BFA16051CBC368B0016C242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFA16041CBC368B0016C242 /* Assets.xcassets */; };
 		5BFA16081CBC368B0016C242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFA16061CBC368B0016C242 /* LaunchScreen.storyboard */; };
 		5BFA16131CBC368B0016C242 /* RecipeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA16121CBC368B0016C242 /* RecipeAppTests.swift */; };
 		5BFA161E1CBC368B0016C242 /* RecipeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA161D1CBC368B0016C242 /* RecipeAppUITests.swift */; };
+		5BFA162C1CBC3A390016C242 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA162B1CBC3A390016C242 /* RecipeTableViewCell.swift */; };
+		5BFA16301CBC3D7F0016C242 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA162F1CBC3D7F0016C242 /* RecipeTableViewController.swift */; };
+		5BFA16321CBC3DDC0016C242 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA16311CBC3DDC0016C242 /* Recipe.swift */; };
+		5BFA16731CBF5EED0016C242 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA16721CBF5EED0016C242 /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		5BFA15F71CBC368B0016C242 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFA15FA1CBC368B0016C242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BFA15FC1CBC368B0016C242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5BFA15FF1CBC368B0016C242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BFA16021CBC368B0016C242 /* RecipeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeApp.xcdatamodel; sourceTree = "<group>"; };
 		5BFA16041CBC368B0016C242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		5BFA16191CBC368B0016C242 /* RecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFA161D1CBC368B0016C242 /* RecipeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppUITests.swift; sourceTree = "<group>"; };
 		5BFA161F1CBC368B0016C242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BFA162B1CBC3A390016C242 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		5BFA162F1CBC3D7F0016C242 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		5BFA16311CBC3DDC0016C242 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		5BFA16721CBF5EED0016C242 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				5BFA15FA1CBC368B0016C242 /* AppDelegate.swift */,
-				5BFA15FC1CBC368B0016C242 /* ViewController.swift */,
 				5BFA15FE1CBC368B0016C242 /* Main.storyboard */,
 				5BFA16041CBC368B0016C242 /* Assets.xcassets */,
 				5BFA16061CBC368B0016C242 /* LaunchScreen.storyboard */,
 				5BFA16091CBC368B0016C242 /* Info.plist */,
 				5BFA16011CBC368B0016C242 /* RecipeApp.xcdatamodeld */,
+				5BFA162B1CBC3A390016C242 /* RecipeTableViewCell.swift */,
+				5BFA162F1CBC3D7F0016C242 /* RecipeTableViewController.swift */,
+				5BFA16311CBC3DDC0016C242 /* Recipe.swift */,
+				5BFA16721CBF5EED0016C242 /* RecipeDetailViewController.swift */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -260,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BFA16031CBC368B0016C242 /* RecipeApp.xcdatamodeld in Sources */,
-				5BFA15FD1CBC368B0016C242 /* ViewController.swift in Sources */,
 				5BFA15FB1CBC368B0016C242 /* AppDelegate.swift in Sources */,
+				5BFA16321CBC3DDC0016C242 /* Recipe.swift in Sources */,
+				5BFA162C1CBC3A390016C242 /* RecipeTableViewCell.swift in Sources */,
+				5BFA16731CBF5EED0016C242 /* RecipeDetailViewController.swift in Sources */,
+				5BFA16301CBC3D7F0016C242 /* RecipeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +498,7 @@
 				5BFA16241CBC368B0016C242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BFA16251CBC368B0016C242 /* Build configuration list for PBXNativeTarget "RecipeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +507,7 @@
 				5BFA16271CBC368B0016C242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BFA16281CBC368B0016C242 /* Build configuration list for PBXNativeTarget "RecipeAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +516,7 @@
 				5BFA162A1CBC368B0016C242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
